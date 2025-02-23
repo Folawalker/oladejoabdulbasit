@@ -8,8 +8,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #D2B48C; /* Chocolate Brown */
+            color: #4E3629; /* Darker shade for text */
+        }
+        .container {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+            background-color: #f5e1c8; /* Light brown for contrast */
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #8B5A2B; /* Dark Chocolate Brown */
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+        .footer a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
+
+    <!-- Header -->
     <div class="container text-center mt-5">
         <h1>Welcome to My Portfolio</h1>
         <p class="text-muted">
@@ -18,42 +53,38 @@
         </p>
     </div>
 
+    <!-- Projects Section -->
     <div class="container mt-4">
-        <h2>Projects</h2>
+        <h2 class="text-center">Projects</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5> <!-- Replace with your project name -->
-                        <p class="card-text">Brief description.</p> <!-- Replace with a short project description -->
-                    </div>
+                <div class="card p-3">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Brief description.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5> <!-- Replace with another project name -->
-                        <p class="card-text">Brief description.</p> <!-- Replace with a short project description -->
-                    </div>
+                <div class="card p-3">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Brief description.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container text-center mt-5">
-        <h2>Contact</h2>
-        <p>Email: <strong>your@email.com</strong></p>  <!-- Replace with your email -->
-        <p>GitHub: 
-            <a href="https://github.com/folawalker" target="_blank">
-                <i class="bi bi-github"></i> folawalker
-            </a>
-        </p>
-        <p>LinkedIn: 
+    <!-- Contact Section -->
+    <footer class="footer text-center mt-5">
+        <h4>How to Reach Me</h4>
+        <p><i class="bi bi-geo-alt"></i> Location: Lagos, Nigeria</p>
+        <p><i class="bi bi-telephone"></i> Phone: (+234) 8067674298</p>
+        <p><i class="bi bi-envelope"></i> Email: <a href="mailto:oladejoabdulbasit@gmail.com">oladejoabdulbasit@gmail.com</a></p>
+        <p>
+            <strong>Social:</strong>
             <a href="https://www.linkedin.com/in/oladejo-abdulbasit/" target="_blank">
-                <i class="bi bi-linkedin"></i> oladejo-abdulbasit
+                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
             </a>
         </p>
-    </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
