@@ -57,29 +57,42 @@
     <div class="container mt-4">
         <h2 class="text-center">Projects</h2>
         <div class="row">
+            <!-- Project 1 -->
             <div class="col-md-4">
                 <div class="card p-3">
                     <img src="https://github.com/Folawalker/Movie-Analysis/blob/main/movie%20posters.jpg?raw=true" class="card-img-top" alt="Movie Analysis">
                     <div class="card-body">
                         <h5 class="card-title">Movie Analysis</h5>
                         <p class="card-text">Exploratory Data Analysis on movies released between 1980-2020.</p>
-                        <a href="https://github.com/Folawalker/Movie-Analysis" class="btn btn-dark" target="_blank">
-                            View Project
-                        </a>
+                        <a href="https://github.com/Folawalker/Movie-Analysis" class="btn btn-dark" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
+            <!-- Project 2 -->
             <div class="col-md-4">
                 <div class="card p-3">
                     <img src="https://github.com/Folawalker/Marketing-Campaign-Analysis/blob/main/marketing%20campaign.jpg?raw=true" class="card-img-top" alt="Marketing Campaign Analysis">
                     <div class="card-body">
-                        <h5 class="card-text">Marketing Campaign Analysis</h5>
-                        <p class="card-text">An evaluation of a business's marketing campaigns to assess their effectiveness</p>
-                        <a href="https://github.com/Folawalker/Marketing-Campaign-Analysis" class="btn btn-dark" target="_blank">
-                            View Project
-                        </a>
+                        <h5 class="card-title">Marketing Campaign Analysis</h5>
+                        <p class="card-text">An evaluation of a business's marketing campaigns to assess their effectiveness.</p>
+                        <a href="https://github.com/Folawalker/Marketing-Campaign-Analysis" class="btn btn-dark" target="_blank">View Project</a>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Placeholder for up to 6 more projects -->
+            {% for i in range(3, 9) %}
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="" class="card-img-top" alt="Project {{ i }}">
+                    <div class="card-body">
+                        <h5 class="card-title">Project {{ i }}</h5>
+                        <p class="card-text">Description of project {{ i }} goes here.</p>
+                        <a href="#" class="btn btn-dark" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 
