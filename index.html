@@ -43,56 +43,19 @@
     </style>
 </head>
 <body>
-
     <!-- Header -->
     <div class="container text-center mt-5">
         <h1>Welcome to My Portfolio</h1>
         <p class="text-muted">
-            Hi, I'm <strong>Oladejo A. Ayomide</strong>.  
-            A Data Enthusiast proficient with Excel, Python, Power BI, and SQL.
+            Hi, I'm <strong>Oladejo A. Ayomide</strong>, a Data Enthusiast proficient with Excel, Python, Power BI, and SQL.
         </p>
     </div>
 
     <!-- Projects Section -->
     <div class="container mt-4">
         <h2 class="text-center">Projects</h2>
-        <div class="row">
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="https://github.com/Folawalker/Movie-Analysis/blob/main/movie%20posters.jpg?raw=true" class="card-img-top" alt="Movie Analysis">
-                    <div class="card-body">
-                        <h5 class="card-title">Movie Analysis</h5>
-                        <p class="card-text">Exploratory Data Analysis on movies released between 1980-2020.</p>
-                        <a href="https://github.com/Folawalker/Movie-Analysis" class="btn btn-dark" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="https://github.com/Folawalker/Marketing-Campaign-Analysis/blob/main/marketing%20campaign.jpg?raw=true" class="card-img-top" alt="Marketing Campaign Analysis">
-                    <div class="card-body">
-                        <h5 class="card-title">Marketing Campaign Analysis</h5>
-                        <p class="card-text">An evaluation of a business's marketing campaigns to assess their effectiveness.</p>
-                        <a href="https://github.com/Folawalker/Marketing-Campaign-Analysis" class="btn btn-dark" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Placeholder for up to 6 more projects -->
-            {% for i in range(3, 9) %}
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <img src="" class="card-img-top" alt="Project {{ i }}">
-                    <div class="card-body">
-                        <h5 class="card-title">Project {{ i }}</h5>
-                        <p class="card-text">Description of project {{ i }} goes here.</p>
-                        <a href="#" class="btn btn-dark" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+        <div class="row" id="projects">
+            <!-- Project Cards Will Be Inserted Here -->
         </div>
     </div>
 
@@ -112,5 +75,41 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Project Data
+        const projects = [
+            {
+                title: "Movie Analysis",
+                description: "Exploratory Data Analysis on movies released between 1980-2020.",
+                image: "https://github.com/Folawalker/Movie-Analysis/blob/main/movie%20posters.jpg?raw=true",
+                link: "https://github.com/Folawalker/Movie-Analysis"
+            },
+            {
+                title: "Marketing Campaign Analysis",
+                description: "An evaluation of a business's marketing campaigns to assess their effectiveness.",
+                image: "https://github.com/Folawalker/Marketing-Campaign-Analysis/blob/main/marketing%20campaign.jpg?raw=true",
+                link: "https://github.com/Folawalker/Marketing-Campaign-Analysis"
+            }
+            // Add more projects here
+        ];
+
+        // Render Projects
+        const projectContainer = document.getElementById("projects");
+        projects.forEach(project => {
+            const projectCard = `
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="${project.image}" class="card-img-top" alt="${project.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${project.title}</h5>
+                            <p class="card-text">${project.description}</p>
+                            <a href="${project.link}" class="btn btn-dark" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            projectContainer.innerHTML += projectCard;
+        });
+    </script>
 </body>
 </html>
