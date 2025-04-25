@@ -1,71 +1,73 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const projects = [
-        {
-            title: "Movie Analysis",
-            description: "Exploratory Data Analysis on movies released between 1980-2020.",
-            tools: "Python, Pandas, Matplotlib",
-            image: "https://github.com/Folawalker/Movie-Analysis/blob/main/movie%20posters.jpg?raw=true",
-            link: "https://github.com/Folawalker/Movie-Analysis"
-        },
-        {
-            title: "Marketing Campaign Analysis",
-            description: "Assessing the effectiveness of a business's marketing campaigns.",
-            tools: "Power BI, Excel",
-            image: "https://github.com/Folawalker/Marketing-Campaign-Analysis/blob/main/marketing%20campaign.jpg?raw=true",
-            link: "https://github.com/Folawalker/Marketing-Campaign-Analysis"
-        },
-        {
-            title: "Education Data",
-            description: "Identifying factors that influence students' academic performance.",
-            tools: "Python, Seaborn, Jupyter",
-            image: "https://github.com/Folawalker/Education-Data/blob/main/education.jpg?raw=true",
-            link: "https://github.com/Folawalker/Education-Data"
-        },
-        {
-            title: "Megastore Analysis",
-            description: "Uncovering sales trends and optimizing strategies for revenue growth.",
-            tools: "Excel, Power BI",
-            image: "https://github.com/Folawalker/Megastore-Analysis/blob/main/superstore.jpg?raw=true",
-            link: "https://github.com/Folawalker/Megastore-Analysis"
-        },
-        {
-            title: "Engagement Analysis",
-            description: "Uncovering trends in user submissions to identify factors that drive community engagement on a website.",
-            tools: "Python, Pandas",
-            image: "https://github.com/Folawalker/Exploring-Hacker-News-Posts/blob/main/engagement.jpg?raw=true",
-            link: "https://github.com/Folawalker/Exploring-Hacker-News-Posts"
-        },
-        {
-            title: "Instagram Engagment Analysis",
-            description: "Analysing contents that drive up engagements on an Instagram account.",
-            tools: "Excel, Power BI",
-            image: "https://github.com/Folawalker/IG-reach-Analysis-Project/blob/main/Instagram.png?raw=true",
-            link: "https://github.com/Folawalker/IG-reach-Analysis-Project"
-        },
-        {
-            title: "iPhone Sales Analysis in India via Flipkart",
-            description: "A study of the trend of iPhone sales in India on Flipkart website",
-            tools: "Python, BeautifulSoup, Matplotlib",
-            image: "https://github.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart/blob/main/Iphone.jpg?raw=true",
-            link: "https://github.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart"
-        }
-    ];
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const projects = [
+            {
+                title: "Movie Analysis",
+                description: "Exploratory Data Analysis on movies released between 1980-2020.",
+                tools: "Python, Pandas, Matplotlib",
+                image: "https://github.com/Folawalker/Movie-Analysis/blob/main/movie%20posters.jpg?raw=true",
+                link: "https://github.com/Folawalker/Movie-Analysis"
+            },
+            {
+                title: "Marketing Campaign Analysis",
+                description: "Assessing the effectiveness of a business's marketing campaigns.",
+                tools: "Power BI, Excel",
+                image: "https://github.com/Folawalker/Marketing-Campaign-Analysis/blob/main/marketing%20campaign.jpg?raw=true",
+                link: "https://github.com/Folawalker/Marketing-Campaign-Analysis"
+            },
+            {
+                title: "Education Data",
+                description: "Identifying factors that influence students' academic performance.",
+                tools: "Python, Seaborn, Jupyter",
+                image: "https://github.com/Folawalker/Education-Data/blob/main/education.jpg?raw=true",
+                link: "https://github.com/Folawalker/Education-Data"
+            },
+            {
+                title: "Megastore Analysis",
+                description: "Uncovering sales trends and optimizing strategies for revenue growth.",
+                tools: "Excel, Power BI",
+                image: "https://github.com/Folawalker/Megastore-Analysis/blob/main/superstore.jpg?raw=true",
+                link: "https://github.com/Folawalker/Megastore-Analysis"
+            },
+            {
+                title: "Engagement Analysis",
+                description: "Uncovering trends in user submissions to identify factors that drive community engagement on a website.",
+                tools: "Python, Pandas",
+                image: "https://github.com/Folawalker/Exploring-Hacker-News-Posts/blob/main/engagement.jpg?raw=true",
+                link: "https://github.com/Folawalker/Exploring-Hacker-News-Posts"
+            },
+            {
+                title: "Instagram Engagment Analysis",
+                description: "Analysing contents that drive up engagements on an Instagram account.",
+                tools: "Excel, Power BI",
+                image: "https://github.com/Folawalker/IG-reach-Analysis-Project/blob/main/Instagram.png?raw=true",
+                link: "https://github.com/Folawalker/IG-reach-Analysis-Project"
+            },
+            {
+                title: "iPhone Sales Analysis in India via Flipkart",
+                description: "A study of the trend of iPhone sales in India on Flipkart website",
+                tools: "Python, BeautifulSoup, Matplotlib",
+                image: "https://github.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart/blob/main/Iphone.jpg?raw=true",
+                link: "https://github.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart"
+            }
+        ];
 
-    const projectContainer = document.getElementById("projects-container");
-    projects.forEach(project => {
-        const projectCard = `
-            <div class="col-md-4">
-                <div class="card p-3 mb-4">
-                    <img src="${project.image}" class="card-img-top" alt="${project.title}">
-                    <div class="card-body">
-                        <p class="badge bg-dark text-wrap">${project.tools}</p>
-                        <h5 class="card-title">${project.title}</h5>
-                        <p class="card-text">${project.description}</p>
-                        <a href="${project.link}" class="btn btn-dark" target="_blank">View Project</a>
+        const projectContainer = document.getElementById("projects-container");
+        projects.forEach(project => {
+            const projectCard = `
+                <div class="col-md-4">
+                    <div class="card p-3 mb-4">
+                        <img src="${project.image}" class="card-img-top" alt="${project.title}">
+                        <div class="card-body">
+                            <p class="badge bg-dark text-wrap mb-2">${project.tools}</p>
+                            <h5 class="card-title">${project.title}</h5>
+                            <p class="card-text">${project.description}</p>
+                            <a href="${project.link}" class="btn btn-dark" target="_blank">View Project</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-        projectContainer.innerHTML += projectCard;
+            `;
+            projectContainer.innerHTML += projectCard;
+        });
     });
-});
+</script>
