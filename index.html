@@ -1,72 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <!-- Custom Styles -->
-    <style>
-        body {
-            background-color: #D2B48C; /* Chocolate Brown */
-            color: #4E3629; /* Darker shade for text */
-        }
-        .container {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        .card {
-            transition: transform 0.3s ease-in-out;
-            background-color: #f5e1c8; /* Light brown for contrast */
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .footer {
-            background-color: #8B5A2B; /* Dark Chocolate Brown */
-            color: white;
-            padding: 20px 0;
-        }
-        .footer a {
-            color: white;
-            transition: color 0.3s ease-in-out;
-        }
-        .footer a:hover {
-            color: #FFD700; /* Gold hover effect */
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MY PORTFOLIO</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #D2B48C; /* Chocolate Brown */
+      color: #4E3629;
+    }
+    .container {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .card {
+      transition: transform 0.3s ease-in-out;
+      background-color: #f5e1c8;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #8B5A2B;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: white;
+      transition: color 0.3s ease-in-out;
+    }
+    .footer a:hover {
+      color: #FFD700;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <div class="container text-center mt-5 pt-5">
-        <h1>Welcome to My Portfolio</h1>
-        <p class="text-muted">
-            Hi, I'm <strong>Oladejo A. Ayomide</strong>, a Data Enthusiast proficient with Excel, Python, Power BI, and SQL.
-        </p>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Projects Section -->
-    <div class="container mt-4" id="projects">
-        <h2
+  <!-- Header -->
+  <div class="container text-center mt-5 pt-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p class="text-muted">
+      Hi, I'm <strong>Oladejo A. Ayomide</strong>, a Data Enthusiast proficient with Excel, Python, Power BI, and SQL.
+    </p>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="container mt-4" id="projects">
+    <h2 class="text-center">Projects</h2>
+    <div class="row" id="projects-container">
+      <!-- Project Cards Will Be Inserted Here -->
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <footer class="footer text-center mt-5" id="contact">
+    <h4>How to Reach Me</h4>
+    <p><i class="bi bi-geo-alt"></i> Location: Lagos, Nigeria</p>
+    <p><i class="bi bi-telephone"></i> Phone: (+234) 8067674298</p>
+    <p><i class="bi bi-envelope"></i> Email: <a href="mailto:oladejoabdulbasit@gmail.com">oladejoabdulbasit@gmail.com</a></p>
+    <p>
+      <strong>Social:</strong>
+      <a href="https://www.linkedin.com/in/oladejo-abdulbasit/" target="_blank">
+        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+      </a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Portfolio Projects Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const projects = [
+        {
+          title: "MOVIE ANALYSIS",
+          description: "Exploratory Data Analysis on movies released between 1980–2020.",
+          tools: "Python, Excel",
+          image: "https://raw.githubusercontent.com/Folawalker/Movie-Analysis/main/movie%20posters.jpg",
+          link: "https://github.com/Folawalker/Movie-Analysis"
+        },
+        {
+          title: "GLOBAL BLOOD GROUP DISTRIBUTION & IMPLICATIONS FOR MEDICAL PLANNING",
+          description: "Explores global blood group distribution and how it can support healthcare logistics and emergency preparedness.",
+          tools: "Power BI, Excel, Python",
+          image: "https://raw.githubusercontent.com/Folawalker/Blood-Group-Distribution-Analysis/main/Blood%20Cells.jpg",
+          link: "https://github.com/Folawalker/Blood-Group-Distribution-Analysis"
+        },
+        {
+          title: "MARKETING CAMPAIGN ANALYSIS",
+          description: "Assessing the effectiveness of a business's marketing campaigns.",
+          tools: "Power BI, Excel",
+          image: "https://raw.githubusercontent.com/Folawalker/Marketing-Campaign-Analysis/main/marketing%20campaign.jpg",
+          link: "https://github.com/Folawalker/Marketing-Campaign-Analysis"
+        },
+        {
+          title: "EDUCATION DATA",
+          description: "Identifying factors that influence students' academic performance.",
+          tools: "Python, Excel",
+          image: "https://raw.githubusercontent.com/Folawalker/Education-Data/main/education.jpg",
+          link: "https://github.com/Folawalker/Education-Data"
+        },
+        {
+          title: "MEGASTORE ANALYSIS",
+          description: "Uncovering sales trends and optimizing strategies for revenue growth.",
+          tools: "Excel, Power BI, SQL",
+          image: "https://raw.githubusercontent.com/Folawalker/Megastore-Analysis/main/superstore.jpg",
+          link: "https://github.com/Folawalker/Megastore-Analysis"
+        },
+        {
+          title: "ENGAGEMENT ANALYSIS",
+          description: "Uncovering trends in user submissions to identify factors that drive community engagement on a website.",
+          tools: "Python, Excel",
+          image: "https://raw.githubusercontent.com/Folawalker/Exploring-Hacker-News-Posts/main/engagement.jpg",
+          link: "https://github.com/Folawalker/Exploring-Hacker-News-Posts"
+        },
+        {
+          title: "INSTAGRAM ENGAGEMENT ANALYSIS",
+          description: "Analysing contents that drive up engagements on an Instagram account.",
+          tools: "Excel, Python",
+          image: "https://raw.githubusercontent.com/Folawalker/IG-reach-Analysis-Project/main/Instagram.png",
+          link: "https://github.com/Folawalker/IG-reach-Analysis-Project"
+        },
+        {
+          title: "iPHONE SALES ANALYSIS IN INDIA VIA FLIPKART",
+          description: "A study of the trend of iPhone sales in India on Flipkart website.",
+          tools: "Python, Excel",
+          image: "https://raw.githubusercontent.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart/main/Iphone.jpg",
+          link: "https://github.com/Folawalker/iPhone-Sales-Analysis-in-India-on-Flipkart"
+        }
+      ];
+
+      const projectContainer = document.getElementById("projects-container");
+      projects.forEach(project => {
+        const projectCard = `
+          <div class="col-md-4">
+            <div class="card p-3 mb-4">
+              <img src="${project.image}" class="card-img-top" alt="${project.title}">
+              <div class="card-body">
+                <span class="badge mb-2" style="background-color: #d8b4fe; color: #4e1369;">${project.tools}</span>
+                <h5 class="card-title">${project.title}</h5>
+                <p class="card-text">${project.description}</p>
+                <a href="${project.link}" class="btn btn-dark" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        `;
+        projectContainer.innerHTML += projectCard;
+      });
+    });
+  </script>
+</body>
+</html>
