@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -25,14 +23,6 @@
         }
         .card:hover {
             transform: scale(1.05);
-        }
-        .card-img-top {
-            object-fit: cover;
-            height: 200px;
-        }
-        #projects, #contact {
-            padding-top: 80px;
-            margin-top: -80px;
         }
         .footer {
             background-color: #8B5A2B; /* Dark Chocolate Brown */
@@ -79,64 +69,4 @@
 
     <!-- Projects Section -->
     <div class="container mt-4" id="projects">
-        <h2 class="text-center">Projects</h2>
-        <div class="row" id="projects-container">
-            <!-- Project Cards Will Be Inserted Here -->
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <footer class="footer text-center mt-5" id="contact">
-        <h4>How to Reach Me</h4>
-        <p><i class="bi bi-geo-alt"></i> Location: Lagos, Nigeria</p>
-        <p><i class="bi bi-telephone"></i> Phone: (+234) 8067674298</p>
-        <p><i class="bi bi-envelope"></i> Email: <a href="mailto:oladejoabdulbasit@gmail.com">oladejoabdulbasit@gmail.com</a></p>
-        <p>
-            <strong>Social:</strong>
-            <a href="https://www.linkedin.com/in/oladejo-abdulbasit/" target="_blank">
-                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-            </a>
-        </p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Portfolio Projects Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const projects = [
-                {
-                    title: "MOVIE ANALYSIS",
-                    description: "Exploratory Data Analysis on movies released between 1980-2020.",
-                    tools: "Python, Excel",
-                    image: "https://raw.githubusercontent.com/Folawalker/Movie-Analysis/main/movie%20posters.jpg",
-                    link: "https://github.com/Folawalker/Movie-Analysis"
-                },
-                {
-                    title: "GLOBAL BLOOD GROUP DISTRIBUTION & IMPLICATIONS FOR MEDICAL PLANNING",
-                    description: "Explores global blood group distribution and how it can support healthcare logistics and emergency preparedness.",
-                    tools: "Power BI, Excel, Python",
-                    image: "https://raw.githubusercontent.com/Folawalker/Blood-Group-Distribution-Analysis/main/Blood%20Cells.jpg",
-                    link: "https://github.com/Folawalker/Blood-Group-Distribution-Analysis"
-                },
-                {
-                    title: "MARKETING CAMPAIGN ANALYSIS",
-                    description: "Assessing the effectiveness of a business's marketing campaigns.",
-                    tools: "Power BI, Excel",
-                    image: "https://raw.githubusercontent.com/Folawalker/Marketing-Campaign-Analysis/main/marketing%20campaign.jpg",
-                    link: "https://github.com/Folawalker/Marketing-Campaign-Analysis"
-                },
-                {
-                    title: "EDUCATION DATA",
-                    description: "Identifying factors that influence students' academic performance.",
-                    tools: "Python, Excel",
-                    image: "https://raw.githubusercontent.com/Folawalker/Education-Data/main/education.jpg",
-                    link: "https://github.com/Folawalker/Education-Data"
-                },
-                {
-                    title: "MEGASTORE ANALYSIS",
-                    description: "Uncovering sales trends and optimizing strategies for revenue growth.",
-                    tools: "Excel, Power BI, SQL",
-                    image: "https://raw.githubusercontent.com/Folawalker/Megastore-Analysis/main/superstore.jpg",
-                    link: "https://github.com
+        <h2
